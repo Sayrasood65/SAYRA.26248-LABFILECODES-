@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "arith.h"
+
+int main()
+{
+    int a = 5, b = 5;
+
+    printf("Sum : %d\n", add(a, b));
+    printf("Difference : %d\n", sub(a, b));
+    printf("Product : %d\n", product(a, b));
+    printf("Division : %d\n", div(a, b));
+
+    return 0;
+}

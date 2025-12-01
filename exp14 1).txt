@@ -1,0 +1,51 @@
+Write a program to create a static library for performing arithmetic functions
+
+FILE 1 : arith.h
+
+int add(int a, int b);
+int sub(int a, int b);
+int product(int a, int b);
+int div(int a, int b);
+
+
+FILE 2 : arith.c
+
+#include "arith.h"
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int sub(int a, int b)
+{
+    return a - b;
+}
+
+int product(int a, int b)
+{
+    return a * b;
+}
+
+int div(int a, int b)
+{
+    return a / b;
+}
+
+
+FILE 3 : main.c
+
+#include <stdio.h>
+#include "arith.h"
+
+int main()
+{
+    int a = 20, b = 10;
+
+    printf("Sum : %d\n", add(a, b));
+    printf("Difference : %d\n", sub(a, b));
+    printf("Product : %d\n", product(a, b));
+    printf("Division : %d\n", div(a, b));
+
+    return 0;
+}
